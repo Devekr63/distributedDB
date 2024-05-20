@@ -1,4 +1,4 @@
-package com.example.distributedDb.controller.config;
+package com.example.distributedDb.controller.config.datasource;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -27,6 +27,8 @@ import java.util.Map;
         transactionManagerRef = "studentTransactionManager",
         basePackages = {"com.example.distributedDb.student_service.repo"}
 )
+
+//Primary Data source
 public class StudentDatabaseConfig {
 
     @Primary
