@@ -3,14 +3,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.5</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<groupId>com.example</groupId>
+		<artifactId>distributedDB</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.example.distributedDb</groupId>
+
+<!--	<groupId>com.example.distributedDb</groupId>-->
 	<artifactId>student_service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${parent.version}</version>
 	<name>student_service</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -23,24 +23,10 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.mysql</groupId>
-			<artifactId>mysql-connector-j</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
 </project>
